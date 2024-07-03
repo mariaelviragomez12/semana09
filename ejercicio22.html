@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Herramientas y uso</title>
+    <style>
+        h1{
+            text-align: center;
+            border-width: 7px;
+            background-color: rgb(245, 245, 142);
+        }
+        #atencion{
+            background-color: rgb(245, 245, 142);
+            color: rgb(211, 97, 97);
+        }
+        li{
+            font-weight: bold;
+        }
+        .ejemplo1{
+            border-top-style: dashed;
+            border-top-width: 2px;
+            border-top-color: gray;
+        }
+        div{
+            background-color: rgb(245, 245, 142);
+            text-align: center;
+        }
+        .ejemplo2{
+            border-bottom-style: groove;
+            border-bottom-width: 4px;
+            border-bottom-color: orange;
+        }
+        .ejemplo3{
+            margin: 30px 10px;
+        }
+        .ejemplo4{
+            padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 5px;
+            padding-right: 15px;
+        }
+        .ejemplo5{
+            text-indent: 20px;
+        }
+        .ejemplo6{
+            text-wrap: balance;
+        }
+        .ejemplo7{
+            -webkit-text-stroke: 30px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS - Herramientas y uso de comandos</h1>
+    <p>En esta oportunidad se hara un breve repaso de algunas herramientas que han sido aprendidas 
+        en clase, esto se hace con la finalidad de reforzar esas ideas confusas y dejar de ser el 
+        ultimo en retirarse.</p>
+    <p id="atencion">Atencion: esta pagina no contiene todo el contenido CSS, estas son propiedades que se han 
+        decidido reforzar, encontrara un articulo mas detallado dando <a href="https://carontestudio.com/blog/listado-de-propiedades-css/">clic aqui</a>.</p>
+    <ul type="disk">
+        <li>border-top</li>
+        <p> - border top o borde superior es una propiedad que nos permite interactuar con el tamaño especifico
+            de esa parte del borde, en pocas palabras manejar la parte de arriba del borde a nuestra disposicion. Esto tambiwen sirve para hacer modificaciones con otras propiedades, como puede ser cambiar el estilo(-style), el color(-color),etre otras cosas.</p>
+            <p>por ejemplo escribire en mi archivo html una encabezado simple sin agregar la propiedad.</p>
+            <div> 
+                <p>(h2) Titulo de pagina (/h2)
+                <h2>Titulo de pagina</h2>
+            </div>
+        <p>Ahora añadiremos el comando en (style) o en nuestro apartado css ya vinculado, recordemos que las modificaciones
+            se hacen a partir de pixeles(px) para conseguir una medida mas exacta.
+        </p>
+            <div>
+                <p>(style)<br>
+                    h2(<br>
+                        text-align: center;<br>
+                        border-top-style: dashed;<br>
+                        border-top-width: 2px;<br>
+                        border-top-color: gray;<br>
+                    )<br>
+                </p>
+            </div>
+        <p>Bajo esto digo que el borde superior de mi encabezado (h2) tendra una medida de 2 pixeles, su estilo sera giones y el color de este sera gris, lo cual se vera de la siguiente manera.</p>
+        <div class="ejemplo1">
+            <h2>Titulo de pagina</h2>
+        </div>
+        <li>border-botton</li>
+        <p> - border botton o borde inferior es una propiedad que nos permite interactuar con el tamaño especifico
+            de la parte de abajo del borde, en pocas palabras manejar la parte inferior bajo esta y otras propiedades que se pueden ir añadiendo, mayormente diseño del propio elemento.</p>
+            <p>por ejemplo escribire en mi archivo html una encabezado simple sin agregar la propiedad.</p>
+            <div> 
+                <p>(h2) Titulo de pagina (/h2)
+                <h2>Titulo de pagina</h2>
+            </div>   
+            <p>Ahora añadiremos el comando en (style) o en nuestro apartado css ya vinculado, recordemos que las modificaciones
+                se hacen a partir de pixeles(px) para conseguir una medida mas exacta.</p>
+                <div>
+                    <p>(style)<br>
+                        h2(<br>
+                            text-align: center;<br>
+                            border-botton-style: groove;<br>
+                            border-botton-width: 4px;<br>
+                            border-botton-color: orange;<br>
+                        )<br>
+                    </p>
+                </div>
+            <p>Bajo esto digo que el borde inferior de mi encabezado (h2) tendra una medida de 4 pixeles, su estilo sera degradado y su color sera naranja, lo cual se vera de la siguiente manera.</p>
+                <div class="ejemplo2">
+                    <h2>Titulo de pagina</h2>
+                </div>    
+        <li>margin</li>
+            <p>margin o margen es una propiedad capaz de modificar la posicion del borde en nuestro cuadro, es decir, mover nuestro borde a disposicion.</p>
+            <p>por ejemplo escribire en mi archivo html una encabezado simple sin agregar la propiedad.</p>
+            <div> 
+                <p>(h2) Titulo de pagina (/h2)
+                <h2>Titulo de pagina</h2>
+            </div>   
+            <p>Ahora añadiremos el comando en (style) o en nuestro apartado css ya vinculado, recordemos que las modificaciones
+                se hacen a partir de pixeles(px) para conseguir una medida mas exacta.</p>
+                <div>
+                    <p>(style)<br>
+                        h2(<br>
+                            text-align: center;<br>
+                            margin-top: 10px;<br>
+                            margin-bottom: 10px;<br>
+                            margin-left: 10px;<br>
+                            margin-right: 10px;<br>
+                        )<br>
+                    </p>
+                </div>
+            <p>Bajo esto digo que el borde inferior de mi encabezado (h2) tendra un margen de 10 pixeles del borde izquierdo y derecho y 30 pixeles del borde inferior y superior.</p>
+                <div class="ejemplo3">
+                    <h2>Titulo de pagina</h2>
+                </div>  
+        <li>padding</li>
+            <p>padding o relleno es una propiedad que nos permite manejar el interior de una capa o recuadro que estemos modificando.</p>
+            <p>por ejemplo escribire en mi archivo html una encabezado simple sin agregar la propiedad.</p>
+            <div> 
+                <p>(h2) Titulo de pagina (/h2)
+                <h2>Titulo de pagina</h2>
+            </div>   
+            <p>Ahora añadiremos el comando en (style) o en nuestro apartado css ya vinculado, recordemos que las modificaciones
+                se hacen a partir de pixeles(px) para conseguir una medida mas exacta.</p>
+                <div>
+                    <p>(style)<br>
+                        h2(<br>
+                            text-align: center;<br>
+                            padding-top: 10px;
+                            padding-bottom: 30px;
+                            padding-left: 5px;
+                            padding-right: 15px;
+                        )<br>
+                    </p>
+                </div>
+            <p>Bajo esto digo que el borde inferior de mi encabezado (h2) tendra un espaciado superior de 10 pixeles, espaciado inferior de 30 pixeles, espaciado entre el texto y borde izquierdo de 5 pixeles y espaciado entre el texto y borde derecho de 15 pixeles.</p>
+                <div class="ejemplo4">
+                    <h2>Titulo de pagina</h2>
+                </div>
+        <li>vertical-align</li>
+        <p>La alineacion vertical define la posicion del texto al que se tratara.</p>
+        <p>por ejemplo escribire en mi archivo html una encabezado simple sin agregar la propiedad.</p>
+        <div> 
+            <p>(h2) Titulo de pagina (/h2)
+            <h2>Titulo de pagina</h2>
+        </div>   
+        <p>Ahora añadiremos el comando en (style) o en nuestro apartado css ya vinculado, recordemos que las modificaciones
+            se hacen a partir de pixeles(px) para conseguir una medida mas exacta.</p>
+            <div>
+                <p>(style)<br>
+                    h2(<br>
+                        text-align: center;<br>
+                    )<br>
+                </p>
+            </div>
+        <p>Bajo esto digo que quiero que mi encabezado tenga la posicion del medio de la pantalla, cada elemento posee un ajuste propio por lo que su ajuste es automatico.</p>
+            <div>
+                <h2>Titulo de pagina</h2>
+            </div>
+        <li>text-indent</li>
+        <p>guion de texto o sangria es una herramienta que al mismo estilo de documentos otorga un espacio inicial para dar un formato mas condicional.</p>
+        <p>Por ejemplo añadire un texto simple.</p>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, deleniti. At animi eius iste nisi. Cum sapiente adipisci ipsa soluta, consequuntur at, porro iure voluptatem voluptatum, accusamus numquam omnis non!</p>
+        </div>
+        <p>ahora añadire la modificacion en (style) o en mi archivo css correspondiente.</p>
+        <div>
+            <p>(style)<br>
+                p(<br>
+                    text-indent: 10px;<br>
+                )<br>
+            </p>
+        </div>
+        <p>El resultado seria el siguiente:</p>
+        <div class="ejemplo5">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, deleniti. At animi eius iste nisi. Cum sapiente adipisci ipsa soluta, consequuntur at, porro iure voluptatem voluptatum, accusamus numquam omnis non!</p>
+        </div>
+        <li>text-wrap</li>
+        <p>El ajuste de texto nos permite la modificacion completa de nuestro texto para ser manejado entre bordes.</p>
+        <p>Por ejemplo añadire un texto simple.</p>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, deleniti. At animi eius iste nisi. Cum sapiente adipisci ipsa soluta, consequuntur at, porro iure voluptatem voluptatum, accusamus numquam omnis non!</p>
+        </div>
+        <p>ahora añadire la modificacion en (style) o en mi archivo css correspondiente.</p>
+        <div>
+            <p>(style)<br>
+                p(<br>
+                    text-wrap: balance;<br>
+                )<br>
+            </p>
+        </div>
+        <p>El resultado seria el siguiente:</p>
+        <div class="ejemplo6">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, deleniti. At animi eius iste nisi. Cum sapiente adipisci ipsa soluta, consequuntur at, porro iure voluptatem voluptatum, accusamus numquam omnis non!</p>
+        </div> 
+        <li>text-stroke</li>
+        <p>El trazo de texto permite la modificacion de tamaño y color del texto.</p>
+        <p>Por ejemplo añadire un texto simple.</p>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, deleniti. At animi eius iste nisi. Cum sapiente adipisci ipsa soluta, consequuntur at, porro iure voluptatem voluptatum, accusamus numquam omnis non!</p>
+        </div>
+        <p>ahora añadire la modificacion en (style) o en mi archivo css correspondiente.</p>
+        <div>
+            <p>(style)<br>
+                p(<br>
+                    -webkit-text-stroke: 30px blueviolet;<br>
+                )<br>
+            </p>
+        </div>
+        <p>El resultado seria el siguiente:</p>
+        <div class="ejemplo7">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, deleniti. At animi eius iste nisi. Cum sapiente adipisci ipsa soluta, consequuntur at, porro iure voluptatem voluptatum, accusamus numquam omnis non!</p>
+        </div> 
+    </ul>
+    </body>
+</html>
